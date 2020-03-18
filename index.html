@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
+  <title>Relief Atlanta</title>
+  <meta name="description" content="Listing of donation links for Atlanta service and film industry employees during the COVID crisis">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="manifest" href="site.webmanifest">
@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/jquery.flexdatalist.min.css">
   <link rel="stylesheet" href="css/bars.css">
 
   <meta name="theme-color" content="#fafafa">
@@ -30,26 +32,50 @@
       <h1>Relief Atlanta</h1>
 
       <p>Aiming to provide an easy place to search for and donate to Atlanta industry folk during this time of
-        quarantine. Bars, restaurants, their employees, film industry. If you have an addition to make please email <a
+        quarantine. Bars, restaurants, their employees, film industry. If you have an addition to make (or an edit to an existing listing!) please email <a
           href="mailto:reliefatlanta@gmail.com">reliefatlanta@gmail.com</a>. Thank you!</p>
 
       <form>
-        <label for="bars">Search for a bar here:</label>
+        <label for="bars">Search for a bar / cause here:</label>
 
-        <input type="text" id="bars" name="bars" list="bars-list">
+        <input type="text" id="bars" name="bars" class="flexdatalist" list="bars-list">
 
         <input class="submit" type="submit" name="submit" value="Search">
 
+        <a href="#" class="show-all">Click here to see them all at once!</a>
+
         <datalist id="bars-list">
-          <option>The Bookhouse Pub</option>
+          <option>529</option>
+          <option>8Arm</option>
+          <option>97 Estoria</option>
+          <option>Atlanta Artists Emergency Fund</option>
+          <option>Battle & Brew</option>
+          <option>Bookhouse Pub</option>
+          <option>Brick Store Pub</option>
+          <option>District Atlanta</option>
           <option>The Earl</option>
           <option>El Myr</option>
+          <option>El Ponce</option>
+          <option>Euclid Avenue Yacht Club</option>
           <option>Flatiron / Trophy Room</option>
+          <option>Gaja</option>
           <option>Giving Kitchen</option>
+          <option>Hapeville Corner Tavern</option>
           <option>IATSE</option>
+          <option>Joystick / Georgia Beer Garden</option>
           <option>La Grotta</option>
+          <option>Lazy Betty</option>
+          <option>The Lost Druid</option>
+          <option>Mary's</option>
+          <option>Mission+Market</option>
           <option>MJQ / The Drunken Unicorn</option>
+          <option>My Parent's Basement</option>
           <option>Noni's</option>
+          <option>Righteous Room</option>
+          <option>Sidechick</option>
+          <option>Smith's Olde Bar</option>
+          <option>Supply & Demand</option>
+          <option>Victory / Little Trouble / Lloyd's / S.O.S.</option>
         </datalist>
       </form>
 
@@ -57,80 +83,311 @@
         <div class="bar notfound">
           <h3>Not Found!</h3>
           <p>If you have an addition to make please email <a
-            href="mailto:reliefatlanta@gmail.com">reliefatl@gmail.com</a>.</p>
+              href="mailto:reliefatlanta@gmail.com">reliefatl@gmail.com</a>.</p>
         </div>
-        <div class="bar mjqthedrunkenunicorn">
-          <h3>MJQ</h3>
-          <p>Donation link(s):</p>
+
+        <div class="bar" data-name="529">
+          <h3>529</h3>
+          <p>Donation link:</p>
+          <ul>
+            <li><a
+                href="https://www.gofundme.com/f/support-for-529-staff?utm_medium=copy_link&utm_source=customer&utm_campaign=p_lico+share-sheet+exp4vb&fbclid=IwAR04-JqWpByLQ4h8ikxo_T7wdC8BAb3dg0bzYY6SinFRCb4UibDMNp1zXl0" target="_blank">https://www.gofundme.com/f/support-for-529-staff?utm_medium=copy_link&utm_source=customer&utm_campaign=p_lico+share-sheet+exp4vb&fbclid=IwAR04-JqWpByLQ4h8ikxo_T7wdC8BAb3dg0bzYY6SinFRCb4UibDMNp1zXl0</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bar" data-name="97estoria">
+          <h3>97 Estoria</h3>
+          <p>Donation link:</p>
+          <ul>
+            <li><a
+                href="https://www.gofundme.com/f/donate-to-the-estoria-staff?utm_source=customer&utm_medium=copy_link&utm_campaign=p" target="_blank">https://www.gofundme.com/f/donate-to-the-estoria-staff?utm_source=customer&utm_medium=copy_link&utm_campaign=p</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bar" data-name="8arm">
+          <h3>8arm</h3>
+          <p>8arm is doing curbside and donating a percentage of those sales to furlonged employees:</p>
+          <ul>
+            <li><a
+                href="https://docs.google.com/document/d/19n7aWdoVisfF7G8lRSJhMAd9w-Aa0Luf9ZE1Idg7Y2Y/edit" target="_blank">Google Doc</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bar" data-name="atlantaartistsemergencyfund">
+          <h3>Atlanta Artists Emergency Fund</h3>
+          <p>Donation link:</p>
+          <ul>
+            <li><a href="https://www.gofundme.com/f/atlartsrelief" target="_blank">https://www.gofundme.com/f/atlartsrelief</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bar" data-name="battlebrew">
+          <h3>Battle & Brew</h3>
+          <p>Details:</p>
+          <ul>
+            <li><a
+                href="https://www.facebook.com/battleandbrew/posts/10158225055122783?__xts__[0]=68.ARBF2ZAtb0n8cJwpCi99tj3duek4BDlOTBwEXlRPDuTynhnoNsE1E-R5WFEiSA_oPyOG7cFYWohXBLOd6FrqB6j1wqeV2SvtFNLH4HnWMjB_brR6wn6ubG3z4gf6Gd00H2A7Rbk69maUHgWG310HeaM_hnzgz7pgzM_Mh4qsxVOwv_GC904A2zSpDA6I8M7GhKLBYKXrRFvDYu_QaDupuGggKzZvSLeBBX8Gm2FBIdyNJ0_iORSHM95oDYDay5fhQkjRycFhXVXZbO4xgXfDaaHF5Gc6_e4_p0tOtZVXwGwgkxYv6qn6_9XbB6ZpF4RZLMHmQwc0VkUU855mRVkD&__tn__=-R"
+                target="_blank">Facebook post</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bar" data-name="bookhousepub">
+          <h3>Bookhouse Pub</h3>
+          <p>Donation link:</p>
+          <ul>
+            <li><a
+                href="https://www.gofundme.com/f/support-bookhouse-servers-and-kitchen-staff?utm_source=customer&utm_medium=copy_link&utm_campaign=m_pd+share-sheet"
+                target="_blank">https://www.gofundme.com/f/support-bookhouse-servers-and-kitchen-staff?utm_source=customer&utm_medium=copy_link&utm_campaign=m_pd+share-sheet</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bar" data-name="brickstorepub">
+          <h3>Brick Store Pub</h3>
+          <p>Donation link:</p>
+          <ul>
+            <li><a
+                href="https://www.gofundme.com/f/brick-store-pub-staff?utm_source=customer&utm_medium=copy_link-tip&utm_campaign=p_cp+share-sheet%E2%80%AC"
+                target="_blank">https://www.gofundme.com/f/brick-store-pub-staff?utm_source=customer&utm_medium=copy_link-tip&utm_campaign=p_cp+share-sheet%E2%80%AC</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bar" data-name="districtatlanta">
+          <h3>District Atlanta</h3>
+          <p>Donation link:</p>
+          <ul>
+            <li><a
+                href="https://www.gofundme.com/f/help-the-staff-survive-coronavirus?teamInvite=DYaCuq6WkKed7hHwBBQQSonTZaEROzSHDoMbCwwaPGVZZvbNpcZiX8pyo1k6AbEA&utm_medium=email&utm_source=product&utm_campaign=p_email%2Bteaminviteemail"
+                target="_blank">https://www.gofundme.com/f/help-the-staff-survive-coronavirus?teamInvite=DYaCuq6WkKed7hHwBBQQSonTZaEROzSHDoMbCwwaPGVZZvbNpcZiX8pyo1k6AbEA&utm_medium=email&utm_source=product&utm_campaign=p_email%2Bteaminviteemail</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bar" data-name="theearl">
+          <h3>The Earl</h3>
+          <p>Donation link:</p>
+          <ul>
+            <li><a
+                href="https://www.gofundme.com/f/help-out-the-earl-employees-who-are-out-of-work?utm_source=customer&utm_medium=copy_link&utm_campaign=p_cf+share-flow-1"
+                target="_blank">https://www.gofundme.com/f/help-out-the-earl-employees-who-are-out-of-work?utm_source=customer&utm_medium=copy_link&utm_campaign=p_cf+share-flow-1</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bar" data-name="elmyr">
+          <h3>El Myr</h3>
+          <p>Donation link:</p>
+          <ul>
+            <li><a
+                href="https://www.gofundme.com/f/help-support-elmyr-employees-while-we-are-closed?utm_source=customer&utm_medium=copy_link-tip&utm_campaign=p_cp+share-sheet"
+                target="_blank">https://www.gofundme.com/f/help-support-elmyr-employees-while-we-are-closed?utm_source=customer&utm_medium=copy_link-tip&utm_campaign=p_cp+share-sheet</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bar" data-name="elponce">
+          <h3>El Ponce</h3>
+          <p>Details:</p>
+          <ul>
+            <li>El Ponce is encouraging people to order delivery, takeout, and curbside pick up directly through this link: <a href="https://direct.chownow.com/order/7837/locations/10518" target="_blank">https://direct.chownow.com/order/7837/locations/10518</a>. There are oven ready meals, frozen tamales & our full menu. We have our patio open to enjoy take out food & cocktails- limiting to ten guests spaced far apart!!</li>
+            <li>We are also selling gift certificates and pre-selling merchandise to fund an employee account - <a href="https://www.elponce.com/merch" target="_blank">https://www.elponce.com/merch</a>. All proceeds will be used to pay staff, and tees & candles will be made and shipped post pandemic. Gift certificates are available now, but can be picked up at the restaurant post pandemic as well.</li>
+            <li>We are asking everyone to call & write their elected officials - there is a major bailout for airlines and hotels that leaves our industry out to dry. Here is a sample script if you'd like to use it and please share!<br><a href="/docs/script-sample.pdf" target="_blank">Sample script (pdf)</a><br><a href="/img/script-sample.jpg" target="_blank">Sample script (jpg)</a></li>
+          </ul>
+        </div>
+
+        <div class="bar" data-name="euclidavenueyachtclub">
+          <h3>Euclid Avenue Yacht Club</h3>
+          <p>Donation link:</p>
+          <ul>
+            <li><a
+                href="https://www.gofundme.com/f/help-the-euclid-avenue-yacht-club-family?utm_source=customer&utm_medium=copy_link&utm_campaign=p_cf+share-flow-1"
+                target="_blank">https://www.gofundme.com/f/help-the-euclid-avenue-yacht-club-family?utm_source=customer&utm_medium=copy_link&utm_campaign=p_cf+share-flow-1</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bar" data-name="flatirontrophyroom">
+          <h3>Flatiron / Trophy Room</h3>
+          <p>Donation link:</p>
+          <ul>
+            <li><a
+                href="https://www.gofundme.com/f/help-the-flatiron-and-trophy-room-family?utm_source=facebook&utm_medium=social&utm_campaign=p_cp+share-sheet"
+                target="_blank">https://www.gofundme.com/f/help-the-flatiron-and-trophy-room-family?utm_source=facebook&utm_medium=social&utm_campaign=p_cp+share-sheet</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bar" data-name="gaja">
+          <h3>Gaja</h3>
+          <p>Donation link:</p>
+          <ul>
+            <li><a
+                href="https://www.gofundme.com/f/help-support-gaja-korean-bar-staff-amid-pandemic?utm_source=facebook&utm_medium=social&utm_campaign=p_cp%20share-sheet&fbclid=IwAR1jEN3Hn0z6GGZgC5aHkPnGHDKohT0_Ubpph41ze2UB6trMbUVMZAZNOp0"
+                target="_blank">https://www.gofundme.com/f/help-support-gaja-korean-bar-staff-amid-pandemic?utm_source=facebook&utm_medium=social&utm_campaign=p_cp%20share-sheet&fbclid=IwAR1jEN3Hn0z6GGZgC5aHkPnGHDKohT0_Ubpph41ze2UB6trMbUVMZAZNOp0</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bar" data-name="givingkitchen">
+          <h3>Giving Kitchen</h3>
+          <p>Donation link:</p>
+          <ul>
+            <li><a href="https://connect.clickandpledge.com/w/Form/269a0edd-685c-440b-8a7c-af1ca08bbc91"
+                target="_blank">https://connect.clickandpledge.com/w/Form/269a0edd-685c-440b-8a7c-af1ca08bbc91</a></li>
+          </ul>
+        </div>
+
+        <div class="bar" data-name="hapevillecornertavern">
+          <h3>Hapeville Corner Tavern</h3>
+          <p>Donation link:</p>
+          <ul>
+            <li><a
+                href="https://www.gofundme.com/f/1xij0dy340?utm_medium=social&utm_source=facebook&utm_campaign=p_na%20share-sheet&rcid=bfe6856eb1674a9599e42a5c77e9fcf6&fbclid=IwAR2wc0ODxk4EbdcjFL_4Am0TU03kev0VD-HZGcW9b7C04Rj8PQ5ccC0POJI"
+                target="_blank">https://www.gofundme.com/f/1xij0dy340?utm_medium=social&utm_source=facebook&utm_campaign=p_na%20share-sheet&rcid=bfe6856eb1674a9599e42a5c77e9fcf6&fbclid=IwAR2wc0ODxk4EbdcjFL_4Am0TU03kev0VD-HZGcW9b7C04Rj8PQ5ccC0POJI</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bar" data-name="iatse">
+          <h3>IATSE</h3>
+          <p>Please take a quick moment to click through this and send our state representatives a letter to include us.
+            It only takes 60 seconds.</p>
+          <ul>
+            <li><a
+                href="https://actionnetwork.org/letters/tell-congress-to-include-displaced-workers-in-relief-package?source=facebook"
+                target="_blank">https://actionnetwork.org/letters/tell-congress-to-include-displaced-workers-in-relief-package?source=facebook</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bar" data-name="joystickgeorgiabeergarden">
+          <h3>Joystick / Georgia Beer Garden</h3>
+          <p>Donation link:</p>
+          <ul>
+            <li><a
+                href="https://www.paypal.com/paypalme2/joystickandGBG"
+                target="_blank">https://www.paypal.com/paypalme2/joystickandGBG</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bar" data-name="lagrotta">
+          <h3>La Grotta</h3>
+          <p>Details:</p>
+          <ul>
+            <li>Gift cards can be purchased in any denomination by calling the restaurant <a href="tel:4042311368">(404-231-1368)</a> or by stopping
+              by the restaurant (2637 Peachtree Road) [not recommended as to ensure social distancing] or by email at <a
+                href="mailto:Kristy@lagrottaatlanta.com">Kristy@lagrottaatlanta.com</a>.</li>
+            <li><a href="http://www.tonetoatl.com/2020/03/special-local-restaurant-takes-action.html?m=1"
+                target="_blank">http://www.tonetoatl.com/2020/03/special-local-restaurant-takes-action.html?m=1</a></li>
+          </ul>
+        </div>
+
+        <div class="bar" data-name="lazybetty">
+          <h3>Lazy Betty</h3>
+          <p>Donation link:</p>
+          <ul>
+            <li><a href="https://www.gofundme.com/f/snqsm-lazy-betty-workers-need-your-help" target="_blank">https://www.gofundme.com/f/snqsm-lazy-betty-workers-need-your-help</a></li>
+          </ul>
+        </div>
+
+        <div class="bar" data-name="thelostdruid">
+          <h3>The Lost Druid</h3>
+          <p>Donation link:</p>
+          <ul>
+            <li><a href="https://www.gofundme.com/f/support-the-lost-druid-staff?utm_source=instagram&utm_campaign=p_cf+share-flow-1&utm_medium=social" target="_blank">https://www.gofundme.com/f/support-the-lost-druid-staff?utm_source=instagram&utm_campaign=p_cf+share-flow-1&utm_medium=social</a></li>
+          </ul>
+        </div>
+
+        <div class="bar" data-name="marys">
+          <h3>Mary's</h3>
+          <p>Details:</p>
+          <ul>
+            <li><a href="https://www.facebook.com/marysatlanta/photos/a.79068277707/10158455112157708/?type=3&theater"
+                target="_blank">Facebook post</a></li>
+          </ul>
+        </div>
+
+        <div class="bar" data-name="missionmarket">
+          <h3>Mission+Market</h3>
+          <p>Donation link:</p>
+          <ul>
+            <li><a href="https://www.gofundme.com/f/missionmarket-workers-need-your-help?utm_source=facebook&utm_medium=social&utm_campaign=p_cp+share-sheet"
+                target="_blank">https://www.gofundme.com/f/missionmarket-workers-need-your-help?utm_source=facebook&utm_medium=social&utm_campaign=p_cp+share-sheet</a></li>
+          </ul>
+        </div>
+
+        <div class="bar" data-name="mjqthedrunkenunicorn">
+          <h3>MJQ / The Drunken Unicorn</h3>
+          <p>Donation link:</p>
           <ul>
             <li><a href="https://www.gofundme.com/f/mjqdrunken-unicorn-staff"
                 target="_blank">https://www.gofundme.com/f/mjqdrunken-unicorn-staff</a></li>
           </ul>
         </div>
-        <div class="bar thebookhousepub">
-          <h3>The Bookhouse Pub</h3>
-          <p>Donation link(s):</p>
+
+        <div class="bar" data-name="myparentsbasement">
+          <h3>My Parent's Basement</h3>
+          <p>Donation link:</p>
           <ul>
-            <li><a href="xxxxx" target="_blank">xxxxxxx</a></li>
+            <li><a href="https://www.gofundme.com/f/y5sv46" target="_blank">https://www.gofundme.com/f/y5sv46</a></li>
           </ul>
         </div>
-        <div class="bar elmyr">
-          <h3>El Myr</h3>
-          <p>Donation link(s):</p>
-          <ul>
-            <li><a href="https://www.gofundme.com/f/help-support-elmyr-employees-while-we-are-closed?utm_source=customer&utm_medium=copy_link-tip&utm_campaign=p_cp+share-sheet" target="_blank">https://www.gofundme.com/f/help-support-elmyr-employees-while-we-are-closed?utm_source=customer&utm_medium=copy_link-tip&utm_campaign=p_cp+share-sheet</a></li>
-          </ul>
-        </div>
-        <div class="bar theearl">
-          <h3>The Earl</h3>
-          <p>Donation link(s):</p>
-          <ul>
-            <li><a href="https://www.gofundme.com/f/help-out-the-earl-employees-who-are-out-of-work?utm_source=customer&utm_medium=copy_link&utm_campaign=p_cf+share-flow-1" target="_blank">https://www.gofundme.com/f/help-out-the-earl-employees-who-are-out-of-work?utm_source=customer&utm_medium=copy_link&utm_campaign=p_cf+share-flow-1</a></li>
-          </ul>
-        </div>
-        <div class="bar nonis">
+
+        <div class="bar" data-name="nonis">
           <h3>Noni's</h3>
-          <p>Donation link(s):</p>
+          <p>Donation link:</p>
           <ul>
             <li><a href="https://paypal.me/NonisDeli" target="_blank">https://paypal.me/NonisDeli</a></li>
           </ul>
         </div>
-        <div class="bar flatirontrophyroom">
-          <h3>Flatiron / Trophy Room</h3>
-          <p>Donation link(s):</p>
+
+        <div class="bar" data-name="righteousroom">
+          <h3>Righteous Room</h3>
+          <p>Donation link:</p>
           <ul>
-            <li><a href="https://www.gofundme.com/f/help-the-flatiron-and-trophy-room-family?utm_source=facebook&utm_medium=social&utm_campaign=p_cp+share-sheet" target="_blank">https://www.gofundme.com/f/help-the-flatiron-and-trophy-room-family?utm_source=facebook&utm_medium=social&utm_campaign=p_cp+share-sheet</a></li>
+            <li><a href="https://www.gofundme.com/f/the-righteous-room-employee-fund?fbclid=IwAR2R-A7obFtfC3h4LQn9Qh3Uxo_mSCi4Tn430CkXRz_pms7UWokyP3cZoow" target="_blank">https://www.gofundme.com/f/the-righteous-room-employee-fund?fbclid=IwAR2R-A7obFtfC3h4LQn9Qh3Uxo_mSCi4Tn430CkXRz_pms7UWokyP3cZoow</a></li>
           </ul>
         </div>
-        <div class="bar givingkitchen">
-          <h3>Giving Kitchen</h3>
-          <p>Donation link(s):</p>
+
+        <div class="bar" data-name="sidechick">
+          <h3>Sidechick</h3>
+          <p>Donation link:</p>
           <ul>
-            <li><a href="https://connect.clickandpledge.com/w/Form/269a0edd-685c-440b-8a7c-af1ca08bbc91" target="_blank">https://connect.clickandpledge.com/w/Form/269a0edd-685c-440b-8a7c-af1ca08bbc91</a></li>
+            <li><a href="https://www.gofundme.com/f/sidechick-needs-some-help?sharetype=teams&member=3943952&utm_medium=copy_link&utm_source=customer&utm_campaign=p_na+share-sheet&rcid=89fa767f2f4142f7ba860a8674213b40sidechickdecatur.com" target="_blank">https://www.gofundme.com/f/sidechick-needs-some-help?sharetype=teams&member=3943952&utm_medium=copy_link&utm_source=customer&utm_campaign=p_na+share-sheet&rcid=89fa767f2f4142f7ba860a8674213b40sidechickdecatur.com</a></li>
           </ul>
         </div>
-        <div class="bar givingkitchen">
-          <h3>Giving Kitchen</h3>
-          <p>Donation link(s):</p>
+
+        <div class="bar" data-name="smithsoldebar">
+          <h3>Smith's Olde Bar</h3>
+          <p>Donation link:</p>
           <ul>
-            <li><a href="https://connect.clickandpledge.com/w/Form/269a0edd-685c-440b-8a7c-af1ca08bbc91" target="_blank">https://connect.clickandpledge.com/w/Form/269a0edd-685c-440b-8a7c-af1ca08bbc91</a></li>
+            <li><a href="https://www.gofundme.com/f/support-the-staff-at-smiths-olde-bar?utm_source=facebook&utm_medium=social&utm_campaign=p_cf+share-flow-1&fbclid=IwAR0d_Ggv6d8xNKDI6pvzgJAZ0xKPa-fS7txBuzMXPVmlLmdPsFXu5WjHAwA" target="_blank">https://www.gofundme.com/f/support-the-staff-at-smiths-olde-bar?utm_source=facebook&utm_medium=social&utm_campaign=p_cf+share-flow-1&fbclid=IwAR0d_Ggv6d8xNKDI6pvzgJAZ0xKPa-fS7txBuzMXPVmlLmdPsFXu5WjHAwA</a></li>
           </ul>
         </div>
-        <div class="bar iatse">
-          <h3>IATSE</h3>
-          <p>Please take a quick moment to click through this and send our state representatives a letter to include us. It only takes 60 seconds.</p>
+
+        <div class="bar" data-name="supplydemand">
+          <h3>Supply &amp; Demand</h3>
+          <p>Donation link:</p>
           <ul>
-            <li><a href="https://actionnetwork.org/letters/tell-congress-to-include-displaced-workers-in-relief-package?source=facebook" target="_blank">https://actionnetwork.org/letters/tell-congress-to-include-displaced-workers-in-relief-package?source=facebook</a></li>
+            <li><a href="https://www.gofundme.com/f/supply-amp-demand-fund?sharetype=teams&member=3937412&utm_medium=copy_link&utm_source=customer&utm_campaign=p_na+share-sheet&rcid=34f639bd81a84f4691a9aeed8f5b18e4" target="_blank">https://www.gofundme.com/f/supply-amp-demand-fund?sharetype=teams&member=3937412&utm_medium=copy_link&utm_source=customer&utm_campaign=p_na+share-sheet&rcid=34f639bd81a84f4691a9aeed8f5b18e4</a></li>
           </ul>
         </div>
-        <div class="bar lagrotta">
-          <h3>La Grotta</h3>
-          <p>Details:</p>
+
+        <div class="bar" data-name="victorylittletroublelloydssos">
+          <h3>Victory / Little Trouble / Lloyd's / S.O.S.</h3>
+          <p>Donation link:</p>
           <ul>
-            <li> Gift cards can be purchased in any denomination by calling the restaurant (404-231-1368) or by stopping by the restaurant (2637 Peachtree Road) [not recommended as to ensure social distancing] or by email at <a href="mailto:Kristy@lagrottaatlanta.com">Kristy@lagrottaatlanta.com</a>.</li>
-            <li><a href="http://www.tonetoatl.com/2020/03/special-local-restaurant-takes-action.html?m=1" target="_blank">http://www.tonetoatl.com/2020/03/special-local-restaurant-takes-action.html?m=1</a></li>
+            <li><a href="https://www.gofundme.com/f/all-fcks-given?utm_source=customer&utm_medium=copy_link&utm_campaign=p_cf+share-flow-1" target="_blank">https://www.gofundme.com/f/all-fcks-given?utm_source=customer&utm_medium=copy_link&utm_campaign=p_cf+share-flow-1</a></li>
           </ul>
         </div>
+
       </div>
     </div>
 
@@ -143,6 +400,7 @@
 
   </script>
   <script src="js/plugins.js"></script>
+  <script src="js/jquery.flexdatalist.min.js"></script>
   <script src="js/main.js"></script>
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

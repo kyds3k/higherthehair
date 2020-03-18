@@ -1,22 +1,34 @@
+$('#bars').flexdatalist({
+    searchContain: true
+});
+
 const inputField = document.querySelector('input[type="text"]')
 
 document.querySelector('form').addEventListener('submit', event => {
-    event.preventDefault()
-    let searchTerm = removePunctuation(inputField.value).toLowerCase();
-    $('.bar').fadeOut();
+  event.preventDefault()
+  let searchTerm = removePunctuation(inputField.value).toLowerCase();
+    console.log(searchTerm);
+  $('.bar').stop(true, true).fadeOut();
 
 
-    if(($('.' + searchTerm)).length) {
-        console.log('found that shit');
-        $('.' + searchTerm).fadeIn();
-    } else {
-        $('.notfound').fadeIn();
-    }
+  if (($('.bar[data-name=' + searchTerm + ']')).length) {
+    $('.bar[data-name=' + searchTerm + ']').stop(true, true).delay(500).fadeIn();
+  } else {
+    $('.notfound').stop(true, true).delay(500).fadeIn();
+  }
 
 })
 
-let regex = /[/\s/g\t!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/g;
+$('.show-all').click(function(){
+    $('.bar').not('.notfound').fadeIn();
+    return false;
+});
+
+let punctuation = '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~';
+
+let regex = new RegExp('[' + punctuation + ']', 'g');
 
 function removePunctuation(string) {
-    return string.replace(regex, '');
-  }
+  string = string.replace(/\s+/g,'');
+  return string.replace(regex, '');
+}
