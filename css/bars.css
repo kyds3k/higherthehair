@@ -46,8 +46,8 @@ input.submit {
     width: 10em;
     color: #817144;
     background-color: #80000a;
-    border: 2px solid #817144;
-    border-radius: 10px;
+    border: .125em solid #817144;
+    border-radius: .625em;
     font-weight: bold;
 }
 
@@ -61,6 +61,10 @@ input.submit {
 
 .bar p {
     margin-bottom: 1em;
+}
+
+.bar ul li {
+    margin-bottom: 1.5em;
 }
 
 .bar ul li a {
@@ -80,5 +84,5 @@ input.submit {
 
     input {
         width: 80vw;
-    }    
+    }
 }

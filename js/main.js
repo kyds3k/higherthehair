@@ -12,7 +12,7 @@ document.querySelector('form').addEventListener('submit', event => {
     } else {
         $('.notfound').fadeIn();
     }
-    
+
 })
 
 let regex = /[/\s/g\t!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/g;
