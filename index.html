@@ -38,7 +38,7 @@
       <form>
         <label for="bars">Search for a bar / cause here:</label>
 
-        <input type="text" id="bars" name="bars" class="flexdatalist" list="bars-list">
+        <input type="text" id="bars" placeholder="Type name here for autocomplete" onfocus="this.value='';" name="bars" class="flexdatalist" list="bars-list">
 
         <input class="submit" type="submit" name="submit" value="Search">
 
@@ -63,15 +63,19 @@
           <option>Hapeville Corner Tavern</option>
           <option>IATSE</option>
           <option>Joystick / Georgia Beer Garden</option>
+          <option>Kaleidoscope Bistro & Pub</option>
           <option>La Grotta</option>
           <option>Lazy Betty</option>
           <option>The Lost Druid</option>
+          <option>Lyla Lila</option>
           <option>Mary's</option>
           <option>Mission+Market</option>
           <option>MJQ / The Drunken Unicorn</option>
           <option>My Parent's Basement</option>
           <option>Noni's</option>
+          <option>Restaurant Holmes</option>
           <option>Righteous Room</option>
+          <option>Rina</option>
           <option>Sidechick</option>
           <option>Smith's Olde Bar</option>
           <option>Supply & Demand</option>
@@ -278,6 +282,17 @@
           </ul>
         </div>
 
+        <div class="bar" data-name="kaleidoscopebistropub">
+          <h3>Kaleidoscope Bistro &amp; Pub</h3>
+          <p>Donation link:</p>
+          <ul>
+            <li><a
+                href="https://www.gofundme.com/f/help-kpub-staff-make-it-through-covid19-scare"
+                target="_blank">https://www.gofundme.com/f/help-kpub-staff-make-it-through-covid19-scare</a>
+            </li>
+          </ul>
+        </div>
+
         <div class="bar" data-name="lagrotta">
           <h3>La Grotta</h3>
           <p>Details:</p>
@@ -305,6 +320,14 @@
             <li><a href="https://www.gofundme.com/f/support-the-lost-druid-staff" target="_blank">https://www.gofundme.com/f/support-the-lost-druid-staff</a></li>
           </ul>
         </div>
+
+        <div class="bar" data-name="lylalila">
+          <h3>Lyla Lila</h3>
+          <p>Donation link:</p>
+          <ul>
+            <li><a href="https://gf.me/u/xrprvr" target="_blank">https://gf.me/u/xrprvr</a></li>
+          </ul>
+        </div>        
 
         <div class="bar" data-name="marys">
           <h3>Mary's</h3>
@@ -349,11 +372,27 @@
           </ul>
         </div>
 
+        <div class="bar" data-name="restaurantholmes">
+          <h3>Restaurant Holmes</h3>
+          <p>Donation link:</p>
+          <ul>
+            <li><a href="https://www.gofundme.com/f/restaurant-holmes-covid19-staff-assistance" target="_blank">https://www.gofundme.com/f/restaurant-holmes-covid19-staff-assistance</a></li>
+          </ul>
+        </div>
+
         <div class="bar" data-name="righteousroom">
           <h3>Righteous Room</h3>
           <p>Donation link:</p>
           <ul>
             <li><a href="https://www.gofundme.com/f/the-righteous-room-employee-fund" target="_blank">https://www.gofundme.com/f/the-righteous-room-employee-fund</a></li>
+          </ul>
+        </div>
+
+        <div class="bar" data-name="rina">
+          <h3>Rina</h3>
+          <p>Link to Google doc with Venmo/PayPal donation info:</p>
+          <ul>
+            <li><a href="https://docs.google.com/document/d/1-thDfOPjz8zGhM77SItSbB18M1hO849b9tsMKt6jXB8" target="_blank">https://docs.google.com/document/d/1-thDfOPjz8zGhM77SItSbB18M1hO849b9tsMKt6jXB8</a></li>
           </ul>
         </div>
 
@@ -387,7 +426,7 @@
           <ul>
             <li><a href="https://www.gofundme.com/f/taco-cantina039s-team-support" target="_blank">https://www.gofundme.com/f/taco-cantina039s-team-support</a></li>
           </ul>
-        </div>        
+        </div>
 
         <div class="bar" data-name="victorylittletroublelloydssos">
           <h3>Victory / Little Trouble / Lloyd's / S.O.S.</h3>
@@ -418,7 +457,7 @@
     };
     ga.q = [];
     ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('create', 'UA-161203777-1', 'auto');
     ga('set', 'transport', 'beacon');
     ga('send', 'pageview')
 

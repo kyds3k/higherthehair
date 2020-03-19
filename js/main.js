@@ -17,6 +17,8 @@ document.querySelector('form').addEventListener('submit', event => {
     $('.notfound').stop(true, true).delay(500).fadeIn();
   }
 
+  $('#bars').val('');
+
 })
 
 $('.show-all').click(function(){
