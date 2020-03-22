@@ -1,5 +1,6 @@
 $('#bars').flexdatalist({
-  searchContain: true
+  searchContain: true,
+  searchByWord: true
 });
 
 const inputField = document.querySelector('input[type="text"]')

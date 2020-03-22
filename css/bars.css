@@ -9,8 +9,14 @@ a {
     font-weight: bold;
 }
 
+h1 a,
+h1 a:visited {
+    color: #817144;
+    text-decoration: none;
+}
+
 p {
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 
 .container {
@@ -70,6 +76,12 @@ input.submit {
 
 .bar ul li {
     margin-bottom: 1.5em;
+}
+
+.bar ul li img {
+    width: 100%;
+    margin: 2em 0;
+    max-width: 300px;
 }
 
 .bar ul li a {
