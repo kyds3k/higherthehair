@@ -19,11 +19,13 @@ document.querySelector('form').addEventListener('submit', event => {
   }
 
   $('#bars').val('');
+  $('.show-all').fadeIn();
 
 })
 
 $('.show-all').click(function () {
   $('.bar').not('.notfound').fadeIn();
+  $(this).fadeOut();
   return false;
 });
 

@@ -58,11 +58,15 @@ input.submit {
     margin-bottom: 1em;
 }
 
+.show-all {
+    display: none;
+}
+
 .bars-container {
     position: relative;
 }
 
-.bar {
+.notfound {
     display: none;
 }
 
